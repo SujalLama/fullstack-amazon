@@ -19,7 +19,8 @@
         }
       },
       "api": {
-        "cryptoapi": {}
+        "cryptoapi": {},
+        "notesapi": {}
       }
     }
   }
