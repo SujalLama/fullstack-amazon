@@ -1,7 +1,7 @@
 
 // Import the API category from AWS Amplify
 import './App.css';
-import Chapter2 from "./chapters/Chapter2";
+import Chapter2 from "./chapters/chapter2";
 
 function App() {
   return (
