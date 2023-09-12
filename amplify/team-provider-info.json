@@ -9,18 +9,27 @@
       "UnauthRoleName": "amplify-fullstackamazon-dev-160908-unauthRole",
       "StackName": "amplify-fullstackamazon-dev-160908",
       "StackId": "arn:aws:cloudformation:us-east-2:017791633365:stack/amplify-fullstackamazon-dev-160908/5a737170-508d-11ee-8118-061f9897c4b1",
-      "AmplifyAppId": "d1arevrlvej3xh"
+      "AmplifyAppId": "d1arevrlvej3xh",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-fullstackamazon-dev-160908-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "function": {
         "cryptofunction": {
           "deploymentBucketName": "amplify-fullstackamazon-dev-160908-deployment",
           "s3Key": "amplify-builds/cryptofunction-58797747334844454834-build.zip"
+        },
+        "fullstackamazonee35d349PostConfirmation": {
+          "GROUP": "Admin",
+          "deploymentBucketName": "amplify-fullstackamazon-dev-160908-deployment",
+          "s3Key": "amplify-builds/fullstackamazonee35d349PostConfirmation-4e6d436865353277556a-build.zip"
         }
       },
       "api": {
         "cryptoapi": {},
         "notesapi": {}
+      },
+      "auth": {
+        "fullstackamazonee35d349": {}
       }
     }
   }

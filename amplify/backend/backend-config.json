@@ -33,8 +33,49 @@
       "service": "AppSync"
     }
   },
+  "auth": {
+    "fullstackamazonee35d349": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "fullstackamazonee35d349PostConfirmation",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
   "function": {
     "cryptofunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "fullstackamazonee35d349PostConfirmation": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
@@ -54,6 +95,30 @@
         {
           "category": "function",
           "resourceName": "cryptofunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_fullstackamazonee35d349PostConfirmation_GROUP": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fullstackamazonee35d349PostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_fullstackamazonee35d349PostConfirmation_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fullstackamazonee35d349PostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_fullstackamazonee35d349PostConfirmation_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fullstackamazonee35d349PostConfirmation"
         }
       ]
     }
