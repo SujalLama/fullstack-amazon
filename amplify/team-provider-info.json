@@ -22,6 +22,10 @@
           "GROUP": "Admin",
           "deploymentBucketName": "amplify-fullstackamazon-dev-160908-deployment",
           "s3Key": "amplify-builds/fullstackamazonee35d349PostConfirmation-4e6d436865353277556a-build.zip"
+        },
+        "S3Trigger47f2db94": {
+          "deploymentBucketName": "amplify-fullstackamazon-dev-160908-deployment",
+          "s3Key": "amplify-builds/S3Trigger47f2db94-626d4f646c4d5665376e-build.zip"
         }
       },
       "api": {
@@ -30,6 +34,9 @@
       },
       "auth": {
         "fullstackamazonee35d349": {}
+      },
+      "storage": {
+        "s32e24cb7f": {}
       }
     }
   }
